@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">Xx
+    <title>Register - Sweet Scoops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Sweet Scoops</div>
+    <nav>
+         <a href="index.html">Home</a>
+         <a href="gallery.html">Gallery</a>
+         <a href="order.html">Order</a>
+         <a href="login.html">Login</a>
+         <a href="register.html">Register</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="feedback.html">feedback</a>
+    </nav>
+</header>
+<!-- REGISTER FORM -->
+<div class="login-container">
+
+    <div class="login-box">
+        <h2>Register</h2>
+
+        <form onsubmit="return showSuccess()">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <input type="password" placeholder="Password" required>
+
+            <!-- Gender -->
+            <div class="gender">
+                <label><input type="radio" name="gender" required> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <!-- Address -->
+            <textarea placeholder="Enter Address" rows="3" required></textarea>
+
+            <button type="submit">Register</button>
+
+            <p style="margin-top:10px;">
+                Already have account? 
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function showSuccess(){
+    alert("🎉 Registration Successful!");
+    window.location.href = "login.html";
+    return false;
+}
+</script>
+<!-- FOOTER -->
+<footer>
+    <p>© 2024 Sweet Scoops Ice Cream Parlour. All rights reserved.</p>
+    <p>Made with ❤️ for ice cream lovers</p>
+</footer>
+</body>
+</html>
